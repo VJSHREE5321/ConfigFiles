@@ -133,5 +133,53 @@ Fast-forward
  git_commands.txt | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Clone_Repository
+$ git clone "https://github.com/VJSHREE5321/ConfigFiles.git"
+Cloning into 'ConfigFiles'...
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 20 (delta 7), reused 13 (delta 2), pack-reused 0
+Receiving objects: 100% (20/20), 798.53 KiB | 1.70 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
 
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git checkout -b CSE_Branch
+Switched to a new branch 'CSE_Branch'
 
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (CSE_Branch)
+$ git branch
+* CSE_Branch
+  main
+  master
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (CSE_Branch)
+$ git checkout master
+Switched to branch 'master'
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git push origin CSE_Branch
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'CSE_Branch' on GitHub by visiting:
+remote:      https://github.com/VJSHREE5321/ConfigFiles/pull/new/CSE_Branch
+remote:
+To https://github.com/VJSHREE5321/ConfigFiles.git
+ * [new branch]      CSE_Branch -> CSE_Branch
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git checkout
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git branch
+  CSE_Branch
+  main
+* master
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git checkout master
+Already on 'master'
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git merge CSE_Branch
+Already up to date.
