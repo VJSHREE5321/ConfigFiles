@@ -118,7 +118,7 @@ $ git remote -v
 origin  https://github.com/VJSHREE5321/ConfigFiles.git (fetch)
 origin  https://github.com/VJSHREE5321/ConfigFiles.git (push)
 
-"Git varti kelele chanages refect zale ka...???"
+"Git varti kelele chanages refect zale ka...????"
 
 
 
