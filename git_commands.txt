@@ -1,0 +1,124 @@
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository
+$ git init
+Initialized empty Git repository in D:/CJC/Git_Local_Repository/.git/
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SpringBootDependencies.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git add .
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git add *
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git add --all
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git add SpringBootDependencies.txt
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SpringBootDependencies.txt
+
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git commit -m "Welcome to GOA Singham"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'VijayShree@LAPTOP-FS33K9QP.(none)')
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git config --global user.email "vijayshreeacademy20@gmail.com"
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git config --global user.name "VJ SONAWANE"
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git commit -m "Welcome to GOA Singham"
+[master (root-commit) bf2770d] Welcome to GOA Singham
+ 1 file changed, 66 insertions(+)
+ create mode 100644 SpringBootDependencies.txt
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git log
+commit bf2770d0cebf749cb57c178633046a8e0d2d3178 (HEAD -> master)
+Author: VJ SONAWANE <vijayshreeacademy20@gmail.com>
+Date:   Fri Mar 17 11:12:08 2023 +0530
+
+    Welcome to GOA Singham
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git remote add origin "https://github.com/VJSHREE5321/ConfigFiles.git"
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git push origin master --force
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 697 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/VJSHREE5321/ConfigFiles.git
+ + 0dd2ce7...bf2770d master -> master (forced update)
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git push origin master --force
+Everything up-to-date
+
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git branch
+* master
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (main)
+$ git branch
+* main
+  master
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (main)
+$ git checkout master
+Switched to branch 'master'
+
+VijayShree@LAPTOP-FS33K9QP MINGW64 /d/CJC/Git_Local_Repository (master)
+$ git remote -v
+origin  https://github.com/VJSHREE5321/ConfigFiles.git (fetch)
+origin  https://github.com/VJSHREE5321/ConfigFiles.git (push)
+
+
+
+
+
